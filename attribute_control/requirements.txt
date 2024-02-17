@@ -1,0 +1,11 @@
+numpy
+torch
+torchvision
+evaluate
+transformers
+argparse
+pandas
+faiss
+tensorflow
+tensorflow_hub
+bert_score
