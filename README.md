@@ -2,7 +2,9 @@
 
 Source code accompanying our paper, "CEV-LM: Controlled Edit Vector Language Model for Shaping Natural Language Generations".
 
-**Authors:** Anonymous for EMNLP 2023 Submission 
+If this code helps you in your research, please cite the following publication (BibTeX at the bottom of the README):
+
+> Samraj Moorjani, Adit Krishnan, and Hari Sundaram. 2024. CEV-LM: Controlled Edit Vector Language Model for Shaping Natural Language Generations. In Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1325–1340, St. Julian’s, Malta. Association for Computational Linguistics.
 
 ## Directory Structure
 
@@ -75,3 +77,25 @@ Note that you should use `seq2seq/train_bart.py` to train the benchmark. You may
 ### GPT-3
 
 We include a file to help you start running the baseline in `benchmarks/gpt/run_gpt.py`. All information regarding prompt creation is included in the paper. You will need to install the OpenAI API using `pip install openai` and set the API key as an environment variable. Find more information [here](https://platform.openai.com/docs/quickstart/add-some-examples).
+
+## Citation
+If this code helps in your research, please cite our work. The BibTeX citation is as follows:
+
+```
+@inproceedings{moorjani-etal-2024-cev,
+    title = "{CEV}-{LM}: Controlled Edit Vector Language Model for Shaping Natural Language Generations",
+    author = "Moorjani, Samraj  and
+      Krishnan, Adit  and
+      Sundaram, Hari",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.80",
+    pages = "1325--1340",
+    abstract = "As large-scale language models become the standard for text generation, there is a greater need to tailor the generations to be more or less concise, targeted, and informative, depending on the audience/application. Existing control approaches primarily adjust the semantic (e.g., emotion, topics), structural (e.g., syntax tree, parts-of-speech), and lexical (e.g., keyword/phrase inclusion) properties of text, but are insufficient to accomplish complex objectives such as pacing which control the complexity and readability of the text. In this paper, we introduce CEV-LM - a lightweight, semi-autoregressive language model that utilizes constrained edit vectors to control three complementary metrics (speed, volume, and circuitousness) that quantify the shape of text (e.g., pacing of content). We study an extensive set of state-of-the-art CTG models and find that CEV-LM provides significantly more targeted and precise control of these three metrics while preserving semantic content, using less training data, and containing fewer parameters.",
+}
+```
